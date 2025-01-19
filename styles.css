@@ -1,0 +1,330 @@
+/* تثبيت العنوان */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #3464b0!important;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+/* إضافة مسافة لتجنب تداخل المحتوى مع العنوان */
+main {
+    margin-top: 115px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    direction: rtl; /* النص يبدأ من اليمين */
+}
+
+/* تصميم الأقسام */
+.faq-category {
+    margin-bottom: 30px; /* المسافة بين كل قسم وقسم*/
+    direction: rtl; /* النص يبدأ من اليمين */
+}
+.title-main{
+    padding: 1px 1px;
+    width: 100%;
+    height: 100%;
+    direction: rtl; /* النص يبدأ من اليمين */
+    display: block;
+    font-size: 25px;
+
+    color: #000000;
+
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.logo1{
+
+  width: 300px;
+  height: 100%;
+  
+
+}
+
+
+
+.category-title {
+    font-size: 22px; /* حجم خط عناوين الأقسام*/
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd; /* حجم ظل خلفية عنوان القسم*/
+    padding-bottom: 15px; /* ارتفاع خلفية عنوان القسم*/
+    margin-bottom: 5px; /* المسافة بين عنوان القسم وأول إجابة*/
+    background-color: #f39d52;
+    direction: rtl; /* النص يبدأ من اليمين */
+    text-align: center; /* محاذاة النص لليمين */
+    padding: 10px 1px;
+    border-radius: 5px;
+    font-family: 'font1', sans-serif;
+    line-height: 33px;
+    
+}
+
+/* تصميم الأسئلة */
+.faq-section {
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #f5d670;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    direction: rtl; /* النص يبدأ من اليمين */
+    text-align: right; /* محاذاة النص لليمين */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textc{
+    color: #000000;
+    text-align: left;
+}
+
+/* تأثير عند التمرير */
+.faq-section:hover {
+ 
+    transform: scale(1);
+}
+
+.faq-section.open {
+    
+    background-color: #afb7bb;
+    padding-bottom: 20px;
+
+}
+
+
+
+.faq-section h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #000000;
+    flex: 1; /* السماح للنص بالتمدد */
+    text-align: right; /* محاذاة النص لليمين */
+    font-weight: bold;
+}
+.faq-section p {
+ line-height: 10px;
+ position: relative;
+ right: 20px;
+ 
+}
+
+
+
+/* رمز المثلث */
+.faq-section::before {
+    content: '🔽'; /* مثلث متجه للأسفل */
+    font-size: 2rem;
+    color: #3464b0!important;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* تغيير اتجاه المثلث عند إظهار الإجابة */
+.faq-section.open::before {
+    transform: rotate(180deg); /* المثلث يشير للأعلى */
+}
+
+/* تصميم الإجابة بحيث تظهر أسفل السؤال */
+.faq-section p {
+    display: none;
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: normal;
+    color: #000000;
+    direction: rtl; /* النص يبدأ من اليمين */
+    text-align: right; /* محاذاة النص لليمين */
+    width: 95%;
+}
+
+/* عند فتح الإجابة */
+.faq-section.open p {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.UP {
+
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+  position: relative;
+  width: 100%;
+  color: #000000;
+  border: none;
+  background: none;
+  outline: none;
+  margin-bottom: 0px;
+  padding: 0apx 0px;
+  border-radius: 5px;
+  background-color: #f5d670;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  direction: rtl; /* النص يبدأ من اليمين */
+  text-align: right; /* محاذاة النص لليمين */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+@font-face {
+
+  font-family: 'font1';
+  src: url(fonts/font1.ttf);
+  
+  }
+
+@font-face {
+
+font-family: 'font2';
+src: url(fonts/font2.ttf);
+
+}
+
+
+@font-face {
+
+  font-family: 'font3';
+  src: url(fonts/font3.ttf);
+  
+  }
+
+.accordion button .accordion-title {
+  padding: 10px 15px 10px 0;
+  
+  font-size: 26px;
+  width: 90%;
+  font-family: 'font2', sans-serif;
+  color: #641e13;
+
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  
+  max-height: none;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+  background-color: #dbdbdb;
+  
+
+  
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  
+}
+.accordion .accordion-content p {
+  font-size: 23px;
+  font-weight: 300;
+  margin: 15px 0;
+  margin-top: 10px;
+  width: 95%;
+  padding-right: 20px;
+  direction: rtl;
+  color: #000000;
+  font-family: 'font3', sans-serif;
+}
+
+
+
