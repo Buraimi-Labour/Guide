@@ -328,3 +328,9 @@ src: url(fonts/font2.ttf);
 
 
 
+.counterit {
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
